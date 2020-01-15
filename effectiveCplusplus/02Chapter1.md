@@ -1,4 +1,4 @@
-# Chapter 1
+# Chapter 1. Accustoming Yourself to C++
 
 ## Table of contents
 * [Item 1: View C++ as a federation of languages](#item-1-view-c-as-a-federation-of-languages)
