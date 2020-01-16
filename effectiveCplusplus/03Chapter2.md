@@ -3,7 +3,7 @@
 ## Table of contents
 * [Item 5: Know what functions C++ silently writes and calls](#item-5-know-what-functions-c-silently-writes-and-calls)
 * [Item 6: Explicitly disallow the use of compiler-generated functions you do not want](#item-6-explicitly-disallow-the-use-of-compiler-generated-functions-you-do-not-want)
-* [Item 7: Declare destructors virtual in polymorphic base classes](#item-7-declare-constructors-virtual-in-polymorphic-base-classes)
+* [Item 7: Declare destructors virtual in polymorphic base classes](#item-7-declare-destructors-virtual-in-polymorphic-base-classes)
 * [Item 8: Prevent exceptions from leaving destructors](#item-8-prevent-exceptions-from-leaving-destructors)
 * [Item 9: Never call virtual functions during construction or destruction](#item-9-never-call-virtual-functions-during-construction-or-destruction)
 * [Item 10: Have assignment operators return a reference to *this](#item-10-have-assignment-operators-return-a-reference-to-this)
