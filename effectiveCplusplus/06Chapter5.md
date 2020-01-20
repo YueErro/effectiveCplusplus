@@ -4,7 +4,7 @@
 * [Item 26: Postpone variable definitions as long as possible](#item-26-postpone-variable-definitions-as-long-as-possible)
 * [Item 27: Minimize casting](#item-27-minimize-casting)
 * [Item 28: Avoid returning "handles" to object internals](#item-28-avoid-returning-handles-to-object-internals)
-* [Item29: Strive for exception-safe code](#item-29-strive-for-exception-safe-code)
+* [Item 29: Strive for exception-safe code](#item-29-strive-for-exception-safe-code)
 * [Item 30: Understand the ins and outs of inlining](#item-30-understand-the-ins-and-outs-of-inlining)
 * [Item 31: Minimize compilation dependencies between files](#item-31-minimize-compilation-dependencies-between-files)
 

@@ -8,7 +8,7 @@ A ***declaraion*** tells compilers about the name and type of something, but it 
 
 Note that I refer to the integer x as an "object," even though it's of built-in type. Some people reserve the name "object" for variables of user-defined type.
 
-Each function¡s decalartion revelas its ***signature***, parameter and return types. Using "interface" to talk about a function's signature.
+Each function's decalartion revelas its ***signature***, parameter and return types. Using "interface" to talk about a function's signature.
 
 A ***definition*** is where compilers set aside memory for the object. For a function or a function template, the definition provides the code body. For a class or a class template, the definition lists the members of the class or template.
 

@@ -51,10 +51,14 @@ const std::vector<int>::iterator iter;    // iter acts like a T* const
 std::vector<int>::const_iterator cIter;   // cIter acts like a const T*
 ```
 
-Within a function declaration, `const` can refer to the function's return value, to individual parameters, and, for member functions, to the function as a whole.
+Within a function declaration, `const` can refer to the function's return value, to individual parameters, and, for member functions, to the function as a whole:
 
-
-Unless you need to be able to modify a parameter or local object, be sure to declare it `const`.
+```cpp
+void setName(const std::string &name){...}  // const parameter, const value
+const std::string getName(){...}  // returning value is const
+std::string getName() const{...}  // function is const
+```
+A `const` parameter can only call `cons` methods. You define a `const` function when you are not going to modify anything. Unless you need to be able to modify a parameter or local object, be sure to declare it `const`.
 
 `const` on member functions is importat to knowing which functions may modify an object and which may not, and to making possible to work with `const` objects.
 * *bitwise constness* (*physical constness*):
@@ -63,7 +67,7 @@ Unless you need to be able to modify a parameter or local object, be sure to dec
 
 The bitwise `const` camp believes that a member function is `const` if and only if it doesn't modify any of the object's data members (excluding those that are static).
 
-`mutable` is a nice solution to the bitwise-constness-is-not-what-I-had-in-mind problem.
+`mutable` is a nice solution to the bitwise-constness-is-not-what-I-had-in-mind problem. Set mutable when you need to modify it in a `const` function (e.g. mutex).
 
 #### Things to Remember
 * Declaring something `const` helps compilers detect usage errors. `const` can be applied to objects at any scope, to function parameters and return types, and to member functions as a whole.
@@ -72,8 +76,15 @@ The bitwise `const` camp believes that a member function is `const` if and only 
 
 ### Item 4: Make sure that objects are initialized before they're used
 
-*Always* initialize your objects before you use
-them.
+*Always* initialize your objects before you use them.
+
+```cpp
+class Test{
+  Test() : name("blabla"), count(0){  // initialization
+    // assignment
+  }
+}
+```
 
 #### Things to Remember
 * Manually initialize objects of built-in type, because C++ only sometimes initializes them itself.
