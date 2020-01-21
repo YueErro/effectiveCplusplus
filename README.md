@@ -6,3 +6,4 @@
 4. [Chapter 3. Resource Management](https://github.com/YueErro/effectiveCplusplus/blob/master/effectiveCplusplus/04Chapter3.md)
 5. [Chapter 4. Designs and Declarations](https://github.com/YueErro/effectiveCplusplus/blob/master/effectiveCplusplus/05Chapter4.md)
 6. [Chapter 5. Implementations](https://github.com/YueErro/effectiveCplusplus/blob/master/effectiveCplusplus/06Chapter5.md)
+7. [Chapter 6. Inheritance and Object-Oriented Design](https://github.com/YueErro/effectiveCplusplus/blob/master/effectiveCplusplus/07Chapter6.md)
