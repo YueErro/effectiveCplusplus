@@ -24,9 +24,16 @@ public:
 };
 ```
 
+To copy a pointer by copying the object, avoid default copy assignment, it won't do it: `*my_ptr = *other.my_ptr;`
+
 The generated destructor is non-virtual unless it's for a class inheriting from a base class that itself declares a virtual destructor.
 
-If you want to support assignment in a class containing a reference member, you must define the copy assignment operator yourself.
+If you want to support assignment in a class containing a reference member, you must define the copy assignment operator yourself. If you want to disable the default copy assignment operator:
+
+```cpp
+Empty& operator=(const Empty& rhs){...} delete  // public
+Empty& operator=(const Empty& rhs){...}         // private
+```
 
 #### Things to Remember
 * Compilers may implicitly generate a class's default constructor, copy constructor, copy assignment operator, and destructor.

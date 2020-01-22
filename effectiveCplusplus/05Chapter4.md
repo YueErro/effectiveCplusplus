@@ -44,6 +44,20 @@ If you *want* all your objects to be reliably initialized and destroyed use pass
 
 Passing by reference also avoids the *slicing problem*. When a derived class object is passed (by value) as a base class object, the base class copy constructor is called, and the specialized features that make the object behave like a derived class object are "sliced" off.
 
+Working with inheritance, if you want to distinguish the type of an object pass by reference or pointer, not by value, otherwise you will have a slicing problem. When you want to make a copy of a parent/child object use pointer to avoid the slicing:
+```cpp
+virtual A* clone() const      // class A
+{A* new_a = new A(*this);}
+
+A* clone() const override{     // class B
+  B* new_b = new B(*this);
+  return dynamic_cast<A*>(new_b);
+}
+
+A* new_a2 = my_a.clone();     // use it like this
+
+```
+
 If you have an object of a built-in type (e.g., an `int`), it's often more efficient to pass it by value. The same applies to iterators and function objects in the STL. For everything else, follow the advice of this Item and prefer pass-by-reference-to-`const` over pass-by-value.
 
 #### Things to Remember

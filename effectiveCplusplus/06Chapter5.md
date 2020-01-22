@@ -24,7 +24,7 @@ For classes where an assignment costs less than a constructor-destructor pair, A
 ### Item 27: Minimize casting
 
 * `const_cast<T>(expression)`: is typically used to cast away the constness of objects.
-* `dynamic_cast<T>(expression)`: is primarily used to perform "safe downcasting". It is also the only cast that may have a significant runtime cost.
+* `dynamic_cast<T>(expression)`: is primarily used to perform "safe downcasting". It is also the only cast that may have a significant runtime cost. Use it to cast between parent and childs.
 * `reinterpret_cast<T>(expression)`: is intended for low-level casts that yield implementation-dependent results, e.g., casting a pointer to an `int`.
 * `static_cast<T>(expression)`: can be used to force implicit conversions (e.g., non-`const` object to `const` object, `int` to `double`, etc.). It can also be used to perform the reverse of many such conversions (e.g., pointer-to-base to pointer-to-derived), though it cannot cast from `const` to non-`const` objects.
 

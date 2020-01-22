@@ -6,7 +6,7 @@ Inheritance can be single or multiple, and each inheritance link can be public, 
 * [Item 32: Make sure public inheritance models "is-a"](#item-32-make-sure-public-inheritance-models-is-a)
 * [Item 33: Avoid hiding inherited names](#item-33-avoid-hiding-inherited-names)
 * [Item 34: Differentiate between inheritance of interface and inheritance of implementation](#item-34-differentiate-between-inheritance-of-interface-and-inheritance-of-implementation)
-* [Item 35: Consider alternatives to virtual functions](#item-35-consider-alternatives-to-virtual-fuctions)
+* [Item 35: Consider alternatives to virtual functions](#item-35-consider-alternatives-to-virtual-functions)
 * [Item 36: Never redefine an inherited non-virtual function](#item-36-never-redefine-an-inherited-non-virtual-function)
 * [Item 37: Never redefine a function's inherited default parameter value](#item-37-never-redefine-a-functions-inherited-default-parameter-value)
 * [Item 38: Model "has-a" or "is-implemented-in-terms-of" through composition](#item-38-model-has-a-or-is-implemented-in-terms-of-through-composition)
@@ -25,6 +25,12 @@ Inheritance can be single or multiple, and each inheritance link can be public, 
 * To make hidden names visible again, employ `using` declarations or forwarding functions.
 
 ### Item 34: Differentiate between inheritance of interface and inheritance of implementation
+
+```cpp
+virtual void function(){...}    // To override a parent function use virtual
+void function() override{...}   // In the child, specify override
+```
+Both headers have to be the same, type and function name.
 
 ### Things to Remember
 * Inheritance of interface is different from inheritance of implementation. Under public inheritance, derived classes always inherit base class interfaces.

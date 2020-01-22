@@ -12,7 +12,7 @@ Each function's decalartion revelas its ***signature***, parameter and return ty
 
 A ***definition*** is where compilers set aside memory for the object. For a function or a function template, the definition provides the code body. For a class or a class template, the definition lists the members of the class or template.
 
-***Initialization*** is the process of giving an object its first value. A ***default constructor*** is one that can be called without any arguments.
+***Initialization*** is the process of giving an object its first value. A ***default constructor*** is one that can be called without any arguments. It does not initialize to anything a basic type.
 
 Constructors declared `explicit` are usually preferable to non-`explicit` ones, because they prevent compilers from performing unexpected (often unintended) type conversions.
 
