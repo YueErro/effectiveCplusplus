@@ -9,3 +9,4 @@
 7. [Chapter 6. Inheritance and Object-Oriented Design](https://github.com/YueErro/effectiveCplusplus/blob/master/effectiveCplusplus/07Chapter6.md)
 8. [Chapter 7. Templates and Generic Programming](https://github.com/YueErro/effectiveCplusplus/blob/master/effectiveCplusplus/08Chapter7.md)
 9. [Chapter 8. Customizing new and delete](https://github.com/YueErro/effectiveCplusplus/blob/master/effectiveCplusplus/09Chapter8.md)
+10. [Chapter 9. Miscellany](https://github.com/YueErro/effectiveCplusplus/blob/master/effectiveCplusplus/10Chapter9.md)
