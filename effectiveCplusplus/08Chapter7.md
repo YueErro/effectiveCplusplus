@@ -5,7 +5,7 @@
 * [Item 42: Understand the two meanings of `typename`](#item-42-understand-the-two-meanings-of-typename)
 * [Item 43: Know how to access names in templatized base classes](#item-43-know-how-to-access-names-in-templatized-base-classes)
 * [Item 44: Factor parameter-independent code out of templates](#item-44-factor-parameter-independent-code-out-of-templates)
-* [Item 45: Use member function templates to accept "all compatible types"](https://gist.github.com/YueErro/0de6cc0110e1701fabf5cebcf99abb39#item-45-use-member-function-templates-to-accept-all-compatible-types)
+* [Item 45: Use member function templates to accept "all compatible types"](#item-45-use-member-function-templates-to-accept-all-compatible-types)
 * [Item 46: Define non-member functions inside templates when type conversions are desired](#item-46-define-non-member-functions-inside-templates-when-type-conversions-are-desired)
 * [Item 47: Use traits classes for information about types](#item-47-use-traits-classes-for-information-about-types)
 * [Item 48: Be aware of template metaprogramming](#item-48-be-aware-of-template-metaprogramming)
